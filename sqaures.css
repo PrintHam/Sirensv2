@@ -1,0 +1,78 @@
+.wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+.wrapper__squares div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(14, 184, 246, 0.4);
+}
+.wrapper__squares div:nth-child(1){
+    top: 10%;
+    left: 40%;
+    animation:  animate 10s linear infinite;
+}
+.wrapper__squares div:nth-child(2){
+    top: 10%;
+    left: 92%;
+    animation:  animate 10s linear infinite;
+}
+
+.wrapper__squares div:nth-child(3){
+    top: 10%;
+    left: 59%;
+    animation:  animate 8s linear infinite;
+}
+
+.wrapper__squares div:nth-child(4){
+    top: 10%;
+    left: 44%;
+    animation:  animate 5s linear infinite;
+}
+
+.wrapper__squares div:nth-child(5){
+    top: 10%;
+    left: 72%;
+    animation:  animate 15s linear infinite;
+}
+
+.wrapper__squares div:nth-child(6){
+    top: 30%;
+    left: 40%;
+    animation:  animate 18s linear infinite;
+}
+.wrapper__squares div:nth-child(7){
+    top: 100%;
+    left: 92%;
+    animation:  animate 9s linear infinite;
+}
+
+.wrapper__squares div:nth-child(8){
+    top: 60%;
+    left: 59%;
+    animation:  animate 10s linear infinite;
+}
+
+.wrapper__squares div:nth-child(9){
+    top: 80%;
+    left: 44%;
+    animation:  animate 10s linear infinite;
+}
+
+.wrapper__squares div:nth-child(10){
+    top: 10%;
+    left: 72%;
+    animation:  animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1.1) translateY(-200px) rotate(360deg);
+        opacity: 1;
+    }
+}
